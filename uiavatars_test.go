@@ -30,3 +30,9 @@ func TestCheckThaiName(t *testing.T) {
 		t.Errorf("expected %s, got %s", expectedInitials, initialsName)
 	}
 }
+
+func TestGenerateSVG(t *testing.T) {
+	var fullname = "folk@gmail.com"
+	res := generateSVG(fullname, 100, 100)
+	fmt.Println(res)
+}
