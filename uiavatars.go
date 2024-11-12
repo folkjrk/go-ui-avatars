@@ -333,7 +333,7 @@ func generateSVG(name string, width, height int) string {
 	shortTermsName := getInitials(name)
 
 	canvas.Text(width/2, (height/2)+4, shortTermsName,
-		"fill:#"+t+"; text-anchor:middle; dominant-baseline:middle; font-size:28; font-weight:400; dy:0.35em; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;")
+		"fill:#"+t+"; text-anchor:middle; dominant-baseline:middle; font-size:24; font-weight:400; dy:0.35em; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;")
 	canvas.End()
 	return buffer.String()
 }
